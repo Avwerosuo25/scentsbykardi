@@ -10,8 +10,9 @@ window.onscroll = function () {
   }
 };
 
-// Add a click event listener to scroll back to the top
 scrollToTopBtn.addEventListener("click", function () {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-});
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Use smooth scrolling
+    });
+  });
