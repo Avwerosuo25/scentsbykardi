@@ -1,0 +1,375 @@
+/* Import the Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply styles to the entire page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS styles */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Brand logo color */
+}
+
+.navbar-toggler-icon {
+    color: #333;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #333; /* Navbar link color */
+}
+
+/* Update navbar background color */
+.navbar-light {
+    background-color: #f7d5e1 !important; /* Updated navbar background color */
+}
+
+/* Social Media Icons */
+.navbar-nav .nav-link i {
+    font-size: 24px;
+    margin: 0 10px; /* Add some spacing between social media icons */
+    color: #333; /* Social media icon color */
+}
+
+/* Optional: Style the navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .navbar-light {
+        background-color: #f7d5e1;
+    }
+}
+
+/* ... (previous CSS content) ... */
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    background-color: #f7d5e1;
+    text-align: center;
+    color: #333; /* Text color */
+    padding: 200px 0; /* Adjust padding as needed */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/img-11.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Adjust the opacity of the background image */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero a.btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #f7d5e1 !important;
+}
+
+/* Optional: Style for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero a.btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+/* Collections Section Styles */
+.collections {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.collections h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Collection Card Styles */
+.collection-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.collection-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; /* Ensure images cover the container */
+    height: 250px; /* Fixed height for the images */
+}
+
+.collection-card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.collection-card p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.collection-card a.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f7d5e1; /* Button background color */
+    color: #333; /* Button text color */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.collection-card a.btn:hover {
+    background-color: #333; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+}
+
+/* Price Styles */
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.discounted-price {
+    color: #e74c3c; /* Discounted price color */
+    font-weight: bold;
+}
+
+/* Optional: Style for smaller screens */
+@media (max-width: 768px) {
+    .collections h2 {
+        font-size: 30px;
+    }
+    .collection-card {
+        padding: 15px;
+    }
+    .collection-card h3 {
+        font-size: 20px;
+    }
+    .collection-card p {
+        font-size: 16px;
+    }
+    .collection-card a.btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* About Us Section Styles */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    display: flex; /* Use flexbox for vertical alignment */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.about-image {
+    position: relative;
+    max-width: 100%; /* Limit the image width to the container width */
+    overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.about-image img {
+    width: 100%; /* Ensure the image fills its container horizontally */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-content {
+    padding: 40px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Heading color */
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+}
+
+/* Optional: Style for smaller screens */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 30px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+/* Reviews Section Styles */
+.reviews {
+    background-color: #f7d5e1; /* Updated background color */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Heading color */
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.customer-avatar img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.review-content p {
+    font-size: 18px;
+    color: #333; /* Text color */
+    margin: 20px 0;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+
+/* Contact Us Section Styles */
+.contact-us {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Heading color */
+}
+
+.contact-info h3,
+.contact-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Subheading color */
+}
+
+.contact-info p,
+.contact-details p {
+    font-size: 18px;
+    color: #333; /* Text color */
+    margin: 10px 0;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #f7d5e1; /* Icon color */
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* Style links in the footer */
+.footer a {
+    color: #fff; /* Set the default link color to white */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.2s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover and remove underline */
+.footer a:hover {
+    color: #f7d5e1; /* Change to your desired hover color */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Rest of the existing CSS for the footer... */
+
+
+.footer-row h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-row p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.footer-row ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-row li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.footer-row i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Copyright Notice Styles */
+.copyright {
+    background-color: #f7d5e1;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.copyright p {
+    margin: 0;
+}
